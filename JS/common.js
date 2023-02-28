@@ -2,6 +2,7 @@ $(function () {
   $(".slider").slick({
     autoplay: true,
     dots: true,
+    arrows: true,
     adaptiveHeight: true,
     centerMode: true,
     slidesToShow: 2,
@@ -13,7 +14,7 @@ $(function () {
 $(function () {
   $(".slider_recommend").slick({
     autoplay: true,
-    dots: true,
+    arrows: true,
     adaptiveHeight: true,
     slidesToShow: 6,
     slidesToScroll: 1

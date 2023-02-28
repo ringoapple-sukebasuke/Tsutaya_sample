@@ -7,22 +7,25 @@
   <title>okada</title>
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <!-- slickがうまく読み込めないので、オンラインで実装 -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.scss"/>
-  <link rel="stylesheet" type="text/css" href="css/output/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/output/slick-theme.css"/> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 
-  <script type="text/javascript" src="JS/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="JS/slick.min.js"></script> -->
   <script type="text/javascript" src="JS/common.js"></script>
 </head>
 <body>
-  <div class="header_logo">
-    <img src="https://tsutaya.tsite.jp/static_files/img/logo.png">
-  </div>
   <header>
+    <div class="header_logo">
+      <img src="https://tsutaya.tsite.jp/static_files/img/logo.png">
+    </div>
     <ul class="header_list">
       <li>店舗検索</li>
       <li>商品検索</li>
@@ -54,329 +57,324 @@
         <img src="https://tsutaya.tsite.jp/menu_files/slider/000/000/124/slider_image/500x500.bn_recommend02_640_640.jpg">
       </div>
       <div class="slick-img">
-        <img src="https://tsutaya.tsite.jp/menu_files/slider/000/000/124/slider_image/500x500.bn_recommend02_640_640.jpg">
-      </div>
-      <div class="slick-img">
-        <img src="https://tsutaya.tsite.jp/menu_files/slider/000/000/124/slider_image/500x500.bn_recommend02_640_640.jpg">
-      </div>
-      <div class="slick-img">
         <img src="https://tsutaya.tsite.jp/menu_files/slider/000/000/125/slider_image/500x500.bnr_1950_top.jpg">
       </div>
-      <div class="slick-img">
-        <img src="https://tsutaya.tsite.jp/menu_files/slider/000/000/126/slider_image/500x500.221230.png">
-      </div>
     </div>
   </div>
 
-  <h2>
-    <span class="title">PICKUP NEWS</span>
-  </h2>
-  <div class="sub_title">ピックアップニュース</div>
-  <div class="pickup_content">
-    <ul class="pickup_list">
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/825/article_images/1000x750.4547462126238_1L.jpg">
-          <div class="date">2023.02.17(金)</div>
-          <div class="description">レンタル新作】清野菜名＆松坂桃李主演、完全オリジナルの10年後の物語『耳をすませば』2月22日（水）リリース</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/696/article_images/1000x750.4988104133885_1L.jpg">
-          <div class="date">2023.02.10(金)</div>
-          <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/697/article_images/1000x750.4988104133564_1L.jpg">
-          <div class="date">2023.02.10(金)</div>
-          <div class="description">レンタル新作】一条岬の同名ベストセラーを、道枝駿佑＆福本莉子の主演で映画化!!『今夜、世界からこの恋が消えても』2月15日（水）リリース</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/695/article_images/1000x750.4532612160743_1L.jpg">
-          <div class="date">2023.01.27(金)</div>
-          <div class="description">【レンタル新作】『かもめ食堂』の荻上直子が贈る「おいしい食」と「ささやかなシアワセ」。『川っぺりムコリッタ』2月3日（金）リリース</div>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <div class="main_contents">
+    <h2>
+      <span class="title">PICKUP NEWS</span>
+    </h2>
+    <div class="sub_title">ピックアップニュース</div>
+    <div class="pickup_content">
+      <ul class="pickup_list">
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/825/article_images/1000x750.4547462126238_1L.jpg">
+            <div class="date">2023.02.17(金)</div>
+            <div class="description">レンタル新作】清野菜名＆松坂桃李主演、完全オリジナルの10年後の物語『耳をすませば』2月22日（水）リリース</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/696/article_images/1000x750.4988104133885_1L.jpg">
+            <div class="date">2023.02.10(金)</div>
+            <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/697/article_images/1000x750.4988104133564_1L.jpg">
+            <div class="date">2023.02.10(金)</div>
+            <div class="description">レンタル新作】一条岬の同名ベストセラーを、道枝駿佑＆福本莉子の主演で映画化!!『今夜、世界からこの恋が消えても』2月15日（水）リリース</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/695/article_images/1000x750.4532612160743_1L.jpg">
+            <div class="date">2023.01.27(金)</div>
+            <div class="description">【レンタル新作】『かもめ食堂』の荻上直子が贈る「おいしい食」と「ささやかなシアワセ」。『川っぺりムコリッタ』2月3日（金）リリース</div>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <h2>
-    <span class="title">FEATURE</span>
-  </h2>
-  <div class="sub_title">特集</div>
-  <div class="pickup_content">
-    <ul class="pickup_list">
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="images/feature_1.png">
-          <div class="date">2022.12.30(金)</div>
-          <div class="description">TSUTAYA WOMEN 2023</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="images/feature_2.png">
-          <div class="date">2022.12.19(月)</div>
-          <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="images/feature_3.jpeg">
-          <div class="date">2022.12.08(木)</div>
-          <div class="description">本屋さんで買える！「締め財布」で金運アップ特集【プレイバック：EXTRA MAGAZINE vol.6】</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="images/feature_3.jpeg">
-          <div class="date">2022.12.08(木)</div>
-          <div class="description">TSUTAYA年間ランキング2022』―2022年　全国のTSUTAYAでレンタル、販売された人気作品を一挙紹介！</div>
-        </a>
-      </li>
-    </ul>
-    <a href="#" class="collection_index">特集一覧へ</a>
-  </div>
+    <h2>
+      <span class="title">FEATURE</span>
+    </h2>
+    <div class="sub_title">特集</div>
+    <div class="pickup_content">
+      <ul class="pickup_list">
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="images/feature_1.png">
+            <div class="date">2022.12.30(金)</div>
+            <div class="description">TSUTAYA WOMEN 2023</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="images/feature_1.png">
+            <div class="date">2022.12.19(月)</div>
+            <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="images/feature_3.jpeg">
+            <div class="date">2022.12.08(木)</div>
+            <div class="description">本屋さんで買える！「締め財布」で金運アップ特集【プレイバック：EXTRA MAGAZINE vol.6】</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="images/feature_3.jpeg">
+            <div class="date">2022.12.08(木)</div>
+            <div class="description">TSUTAYA年間ランキング2022』―2022年　全国のTSUTAYAでレンタル、販売された人気作品を一挙紹介！</div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="collection_index">特集一覧へ</a>
+    </div>
 
-  <h2>
-    <span class="title">ARTICLE</span>
-  </h2>
-  <div class="sub_title">記事</div>
-  <div class="pickup_content">
-    <ul class="pickup_list">
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.27(月)</div>
-          <div class="description">大人気コミックス!!『金色のガッシュ!! 2』第2巻発売記念 TSUTAYA限定有償特典付き『金色のガッシュ!! 完全版』『金色のガッシュ!! 2』発売決定!!</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.27(月)</div>
-          <div class="description">26人の作家が同じ1行から紡ぐ全く違うどんでん返し。『黒猫を飼い始めた』【TSUTAYAの名物企画人“仕掛け番長”のススメ】</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.24(金)</div>
-          <div class="description">伊藤潤二の人気漫画が立体化！『うずまき 呪いの小箱 ブラインドボックス フィギュア』の予約販売中！</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.24(金)</div>
-          <div class="description">今の毎日に窮屈さを感じてる人に絶対オススメのラブコメディ！『君と悪いことがしたい』【TSUTAYAの名物企画人“仕掛け番長”のススメ】</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.24(金)</div>
-          <div class="description">舞台『刀剣乱舞』禺伝 矛盾源氏物語× SHIBUYA TSUTAYAコラボカフェ開催決定！</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.24(金)</div>
-          <div class="description">大人気コミックス!!『EDENS ZERO』 最新26巻発売記念！ TSUTAYA限定有償特典付きの発売が決定!!</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.24(金)</div>
-          <div class="description">最高の青春ラブストーリー『なのに、千輝くんが甘すぎる。』、実写映画化！</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.22(水)</div>
-          <div class="description">キャベツをムシャムシャ食べるベジタリアンゾンビ!? クスっと笑える韓国発のゾンビ作品…映画『感染家族』</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.24(金)</div>
-          <div class="description">【レンタル新作】TSUTAYA CREATORS’ PROGRAM FILM 2017準グランプリを獲得した片岡翔監督によるサスペンス・ミステリー『この子は邪悪』3月3日（金）リリース</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.22(木)</div>
-          <div class="description">【レンタル新作】福山雅治主演の『ガリレオ』シリーズ劇場版第3弾！『沈黙のパレード』3月3日（金）リリース</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.22(木)</div>
-          <div class="description">昨年開催し大好評でした『ふしぎ遊戯30周年記念POP UP SHOP』第2弾が3月16日（木）よりTSUTAYAにて開催決定!!</div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
-          <div class="date">2023.02.22(木)</div>
-          <div class="description">表紙は萩原利久・八木勇征！『ダ・ヴィンチ4月号 限定版』が3月6日（月）に発売決定！</div>
-        </a>
-      </li>
-    </ul>
-    <a href="#" class="collection_index">記事一覧へ</a>
-  </div>
+    <h2>
+      <span class="title">ARTICLE</span>
+    </h2>
+    <div class="sub_title">記事</div>
+    <div class="pickup_content">
+      <ul class="pickup_list">
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.27(月)</div>
+            <div class="description">大人気コミックス!!『金色のガッシュ!! 2』第2巻発売記念 TSUTAYA限定有償特典付き『金色のガッシュ!! 完全版』『金色のガッシュ!! 2』発売決定!!</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.27(月)</div>
+            <div class="description">26人の作家が同じ1行から紡ぐ全く違うどんでん返し。『黒猫を飼い始めた』【TSUTAYAの名物企画人“仕掛け番長”のススメ】</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.24(金)</div>
+            <div class="description">伊藤潤二の人気漫画が立体化！『うずまき 呪いの小箱 ブラインドボックス フィギュア』の予約販売中！</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.24(金)</div>
+            <div class="description">今の毎日に窮屈さを感じてる人に絶対オススメのラブコメディ！『君と悪いことがしたい』【TSUTAYAの名物企画人“仕掛け番長”のススメ】</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.24(金)</div>
+            <div class="description">舞台『刀剣乱舞』禺伝 矛盾源氏物語× SHIBUYA TSUTAYAコラボカフェ開催決定！</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.24(金)</div>
+            <div class="description">大人気コミックス!!『EDENS ZERO』 最新26巻発売記念！ TSUTAYA限定有償特典付きの発売が決定!!</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.24(金)</div>
+            <div class="description">最高の青春ラブストーリー『なのに、千輝くんが甘すぎる。』、実写映画化！</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.22(水)</div>
+            <div class="description">キャベツをムシャムシャ食べるベジタリアンゾンビ!? クスっと笑える韓国発のゾンビ作品…映画『感染家族』</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.24(金)</div>
+            <div class="description">【レンタル新作】TSUTAYA CREATORS’ PROGRAM FILM 2017準グランプリを獲得した片岡翔監督によるサスペンス・ミステリー『この子は邪悪』3月3日（金）リリース</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.22(木)</div>
+            <div class="description">【レンタル新作】福山雅治主演の『ガリレオ』シリーズ劇場版第3弾！『沈黙のパレード』3月3日（金）リリース</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.22(木)</div>
+            <div class="description">昨年開催し大好評でした『ふしぎ遊戯30周年記念POP UP SHOP』第2弾が3月16日（木）よりTSUTAYAにて開催決定!!</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/878/article_images/1000x750.TOP.png">
+            <div class="date">2023.02.22(木)</div>
+            <div class="description">表紙は萩原利久・八木勇征！『ダ・ヴィンチ4月号 限定版』が3月6日（月）に発売決定！</div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="collection_index">記事一覧へ</a>
+    </div>
 
-  <img class="release" src="https://tsutaya.tsite.jp/static_files/img/release_calender_bnr_pc.png">
+    <img class="release" src="https://tsutaya.tsite.jp/static_files/img/release_calender_bnr_pc.png">
 
-  <h2>
-    <span class="title">RECOMMENDATION</span>
-  </h2>
-  <div class="sub_title">おすすめ</div>
-  <div class="pickup_content">
-    <div class="slider_recommend">
-      <div class="slick-img_recommend">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/720/article_images/1000x750.bnr_tobinuke.png">
-          <div class="date">2023.02.17(金)</div>
-          <div class="description">「sweet」2023年1月号付録「TOCCA Beauty（トッカ ビューティー）」「隠れ推し活ポーチ」詳細レビュー！</div>
-        </a>
+    <h2>
+      <span class="title">RECOMMENDATION</span>
+    </h2>
+    <div class="sub_title">おすすめ</div>
+    <div class="pickup_content">
+      <div class="slider_recommend">
+        <div class="slick-img_recommend">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/720/article_images/1000x750.bnr_tobinuke.png">
+            <div class="date">2023.02.17(金)</div>
+            <div class="description">「sweet」2023年1月号付録「TOCCA Beauty（トッカ ビューティー）」「隠れ推し活ポーチ」詳細レビュー！</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/static_files/feature/satellite/1216/12161.png">
+            <div class="date">2023.02.17(金)</div>
+            <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
+            <div class="date">2023.02.16(木)</div>
+            <div class="description">本屋さんで買える！「締め財布」で金運アップ特集【プレイバック：EXTRA MAGAZINE vol.6】</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
+            <div class="date">2023.01.18(水)</div>
+            <div class="description">TSUTAYA年間ランキング2022』―2022年　全国のTSUTAYAでレンタル、販売された人気作品を一挙紹介！</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/720/article_images/1000x750.bnr_tobinuke.png">
+            <div class="date">2023.01.18(水)</div>
+            <div class="description">「sweet」2023年1月号付録「TOCCA Beauty（トッカ ビューティー）」「隠れ推し活ポーチ」詳細レビュー！</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/static_files/feature/satellite/1216/12161.png">
+            <div class="date">2023.01.18(水)</div>
+            <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
+            <div class="date">2022.12.08(木)</div>
+            <div class="description">本屋さんで買える！「締め財布」で金運アップ特集【プレイバック：EXTRA MAGAZINE vol.6】</div>
+          </a>
+        </div>
+        <div class="slick-img">
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
+            <div class="date">2022.12.08(木)</div>
+            <div class="description">TSUTAYA年間ランキング2022』―2022年　全国のTSUTAYAでレンタル、販売された人気作品を一挙紹介！</div>
+          </a>
+        </div>
       </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/static_files/feature/satellite/1216/12161.png">
-          <div class="date">2023.02.17(金)</div>
-          <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
-        </a>
-      </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
-          <div class="date">2023.02.16(木)</div>
-          <div class="description">本屋さんで買える！「締め財布」で金運アップ特集【プレイバック：EXTRA MAGAZINE vol.6】</div>
-        </a>
-      </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
-          <div class="date">2023.01.18(水)</div>
-          <div class="description">TSUTAYA年間ランキング2022』―2022年　全国のTSUTAYAでレンタル、販売された人気作品を一挙紹介！</div>
-        </a>
-      </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/720/article_images/1000x750.bnr_tobinuke.png">
-          <div class="date">2023.01.18(水)</div>
-          <div class="description">「sweet」2023年1月号付録「TOCCA Beauty（トッカ ビューティー）」「隠れ推し活ポーチ」詳細レビュー！</div>
-        </a>
-      </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/static_files/feature/satellite/1216/12161.png">
-          <div class="date">2023.01.18(水)</div>
-          <div class="description">レンタル新作】菅田将暉＆原田美枝子主演、川村元気長編監督デビュー作『百花』2月15日（水）リリース</div>
-        </a>
-      </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
-          <div class="date">2022.12.08(木)</div>
-          <div class="description">本屋さんで買える！「締め財布」で金運アップ特集【プレイバック：EXTRA MAGAZINE vol.6】</div>
-        </a>
-      </div>
-      <div class="slick-img">
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/menu_files/article/000/000/466/article_images/1000x750.nenkan.jpg">
-          <div class="date">2022.12.08(木)</div>
-          <div class="description">TSUTAYA年間ランキング2022』―2022年　全国のTSUTAYAでレンタル、販売された人気作品を一挙紹介！</div>
-        </a>
-      </div>
+    </div>
+
+    <h2>
+      <span class="title">TWITTER</span>
+    </h2>
+    <div class="sub_title">ツイッター</div>
+    <div class="twitter_area">
+      <a class="twitter-timeline" href="https://twitter.com/shop_TSUTAYA?ref_src=twsrc%5Etfw">Tweets by shop_TSUTAYA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <h2>
+      <span class="title">OTHER</span>
+    </h2>
+    <div class="sub_title">その他のおすすめ</div>
+    <div class="pickup_content">
+      <ul class="other_list">
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/static_files/top_kanren_topix/images/top-other_tmoney_2212.png">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/static_files/top_kanren_topix/images/top-other_tfan_2212.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pickup_img">
+            <img src="https://tsutaya.tsite.jp/static_files/top_kanren_topix/images/rm_CP_2022.10.27_bar_W1000_H250.png">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <h2>
-    <span class="title">TWITTER</span>
-  </h2>
-  <div class="sub_title">ツイッター</div>
-  <div class="twitter_area">
-    <a class="twitter-timeline" href="https://twitter.com/shop_TSUTAYA?ref_src=twsrc%5Etfw">Tweets by shop_TSUTAYA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-
-  <h2>
-    <span class="title">OTHER</span>
-  </h2>
-  <div class="sub_title">その他のおすすめ</div>
-  <div class="pickup_content">
-    <ul>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/static_files/top_kanren_topix/images/top-other_tmoney_2212.png">
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/static_files/top_kanren_topix/images/top-other_tfan_2212.jpg">
-        </a>
-      </li>
-      <li>
-        <a href="#" class="pickup_img">
-          <img src="https://tsutaya.tsite.jp/static_files/top_kanren_topix/images/rm_CP_2022.10.27_bar_W1000_H250.png">
-        </a>
-      </li>
-    </ul>
-  </div>
   <footer>
     <ul>
       <li>
-        <a href="#" class="pickup_img">
-          <img src="	https://tsutaya.tsite.jp/static_files/img/icon/twitter.png">
+        <a href="#">
+          <img class="pickup_img" src="	https://tsutaya.tsite.jp/static_files/img/icon/twitter.png">
         </a>
       </li>
       <li>
-        <a href="#" class="pickup_img">
-          <img src="https://www.instagram.com/tsutaya.official/">
+        <a href="#">
+          <img class="pickup_img" src="https://tsutaya.tsite.jp/static_files/img/icon/instagram.png">
         </a>
       </li>
       <li>
-        <a href="#" class="pickup_img">
-          <img src="	https://tsutaya.tsite.jp/static_files/img/icon/line.png">
+        <a href="#">
+          <img class="pickup_img" src="	https://tsutaya.tsite.jp/static_files/img/icon/line.png">
         </a>
       </li>
     </ul>
     <ul>
-      <li>
-        <a href="#" class="pickup_img">T会員規約</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">T会員規約</a>
       </li>
-      <li>
-        <a href="#" class="pickup_img">「TSUTAYA online」サービス利用規約</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">「TSUTAYA online」サービス利用規約</a>
       </li>
-      <li>
-        <a href="#" class="pickup_img">個人情報の取扱い</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">個人情報の取扱い</a>
       </li>
-      <li>
-        <a href="#" class="pickup_img">個人情報保護方針</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">個人情報保護方針</a>
       </li>
-      <li>
-        <a href="#" class="pickup_img">リンクの申請</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">リンクの申請</a>
       </li>
-      <li>
-        <a href="#" class="pickup_img">採用情報</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">採用情報</a>
       </li>
-      <li>
-        <a href="#" class="pickup_img">サイトマップ</a>
+      <li class="footer_menu">
+        <a href="#" class="menu_list">サイトマップ</a>
       </li>
       <div>©Culture Convenience Club Co.,Ltd.</div>
     </ul>
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

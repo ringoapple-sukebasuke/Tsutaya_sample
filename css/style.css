@@ -1,17 +1,19 @@
 body {
-  max-width: 1300px;
   margin: 0 auto;
-}
-
-.header_logo {
-  display:block;
-  text-align: center;
-  max-width: 200px;
-  margin: 0 auto;
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 li {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000000;
 }
 
 .header_logo img {
@@ -24,6 +26,21 @@ img {
 
 header {
   text-align: center;
+  border-bottom: 3px solid #000;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  background: white;
+}
+
+header .header_logo {
+  display:block;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .header_list {
@@ -33,19 +50,79 @@ header {
   padding: 0;
 }
 
+.container {
+  margin-top: 100px;
+}
+
 li {
   display: inline-block;
   padding: 10px;
 }
 
+/* slickのcss */
 .slider {
   margin: 30px auto 0;
-  max-width: 500px;
-  width: 80%;
+  width: 100%;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider::before {
+  left: 0;
+}
+
+.slider::after {
+  right: 0;
+}
+
+.slider .slick-dots {
+  bottom: -50px;
+}
+
+.slick-img {
+  height: auto;
+  width: 500px;
 }
 .slick-img img {
   height: auto;
   width: 100%;
+}
+
+.slick-prev:before {
+  content: '←';
+  color: black;
+  font-size: 26px;
+}
+
+.slick-next:before {
+  content: '→';
+  color: black;
+  font-size: 26px;
+}
+
+/* slickのCSSここまで */
+
+
+.main_contents {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 h2 {
@@ -86,18 +163,61 @@ h2 .title {
   margin: 0 auto;
 }
 
+.pickup_content .slider_recommend .pickup_img img {
+  width: 167px;
+  height: 125px;
+}
+
+.pickup_content .slider_recommend .pickup_img .date {
+  font-size: 14px;
+  color: black;
+  margin: 15px 0;
+}
+.pickup_content .slider_recommend .pickup_img .description {
+  font-weight: 500;
+  color: black;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .pickup_content .pickup_list li {
-  flex: 1;
   margin: 0 10px;
 }
 
 .pickup_list {
-  display: block;
+  display: flex;
   justify-content: center;
+  word-wrap: break-word;
+  flex-wrap: wrap;
 }
 
 .pickup_content .pickup_list li {
   width: 20%;
+}
+
+.pickup_content .pickup_list li .date {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.pickup_content .pickup_list li .description {
+  font-weight: 600;
+  color: black;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.other_list {
+  display: block;
+  justify-content: center;
+}
+.pickup_content .other_list li {
+  width: 30%;
 }
 
 .pickup_content .collection_index {
@@ -124,13 +244,38 @@ h2 .title {
   margin: 100px auto 0;
 }
 
-
-
-
-
-
-
 .twitter_area {
   width: 500px;
   margin: 0 auto;
+  max-height: 600px;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+footer {
+  background: #e5e5e1;
+}
+
+footer ul {
+  text-align: center;
+}
+footer ul li {
+  margin-right: 10px;
+}
+
+footer ul .footer_menu:after {
+  content: "|";
+  display: inline-block;
+  width: 10px;
+  color: #c1c1c1;
+  text-align: center;
+}
+
+footer ul .footer_menu .menu_list {
+  font-size: 12px;
+  color: #000;
+}
+
+footer ul li a .pickup_img {
+  width: 30px;
 }
