@@ -1,0 +1,136 @@
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header_logo {
+  display:block;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+li {
+  cursor: pointer;
+}
+
+.header_logo img {
+  width: 100%;
+}
+
+img {
+  width: 100%
+}
+
+header {
+  text-align: center;
+}
+
+.header_list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.slider {
+  margin: 30px auto 0;
+  max-width: 500px;
+  width: 80%;
+}
+.slick-img img {
+  height: auto;
+  width: 100%;
+}
+
+h2 {
+  margin-top: 200px;
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-top: 2px solid #000000;
+  margin-bottom: 0;
+}
+
+h2 .title {
+  /* max-width: 1000px;
+  margin: 0 auto; */
+  background-color: #ffffff;
+  padding: 0 20px;
+  position: relative;
+  top: -23px;
+}
+
+.sub_title {
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  border-top: none;
+  display: block;
+  margin-bottom: 45px;
+  margin-top: -15px;
+  padding-bottom: 0;
+  width: auto;
+  font-size: 14px;
+}
+
+.pickup_content {
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pickup_content .pickup_list li {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.pickup_list {
+  display: block;
+  justify-content: center;
+}
+
+.pickup_content .pickup_list li {
+  width: 20%;
+}
+
+.pickup_content .collection_index {
+  color: #29619a;
+  font-size: 16px;
+  line-height: 2.5;
+  background: #ffffff;
+  border: 2px solid #29619a;
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px auto 0;
+}
+
+.release {
+  display: block;
+  width: 80%;
+  margin: 100px auto 0;
+}
+
+
+
+
+
+
+
+.twitter_area {
+  width: 500px;
+  margin: 0 auto;
+}
