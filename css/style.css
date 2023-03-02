@@ -2,9 +2,14 @@
 body {
   margin: 0 auto;
   font-size: 62.5% !important;
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .only_pc {
@@ -44,7 +49,8 @@ a:hover {
 }
 
 img {
-  width: 100%
+  width: 100%;
+  overflow-clip-margin: content-box;
 }
 
 header {
@@ -94,10 +100,15 @@ header .header_logo {
   padding: 0 14px;
   color: #000000;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   letter-spacing: initial;
   position: relative;
+}
+
+.header_list li a:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .header_last_list {
@@ -249,23 +260,21 @@ h2 .title {
 }
 
 .pickup_content .slider_recommend .pickup_img .date {
-  font-size: 14px;
-  color: black;
-  margin: 15px 0;
-  padding: 0 12px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 11px;
+  margin: 10px 0;
+  color: #000;
 }
 .pickup_content .slider_recommend .pickup_img .description {
-  font-weight: 500;
+  font-weight: bold;
   color: black;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   padding: 0 13px;
-}
-
-.pickup_content .pickup_list li {
-  margin: 0 10px;
+  font-size: 1.3em;
 }
 
 .pickup_list {
@@ -276,7 +285,11 @@ h2 .title {
 }
 
 .pickup_content .pickup_list li {
-  width: 20%;
+  width: 232px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .pickup_content .pickup_list li .date {
@@ -286,18 +299,20 @@ h2 .title {
 }
 
 .pickup_content .pickup_list li .description {
-  font-weight: 600;
+  font-weight: bold;
   color: black;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  font-size: 1.3em;
 }
 
 .other_list {
   display: block;
   justify-content: center;
   margin-bottom: 80px;
+  text-align: center;
 }
 .pickup_content .other_list li {
   width: 30%;
@@ -387,13 +402,123 @@ footer ul .company_name {
     margin-top: 90px;
   }
 
+  h2.first_content {
+    margin-top: 100px;
+  }
+
   h2 .title {
     font-size: 24px;
   }
 
+  .sub_title {
+    margin-bottom: 25px;
+  }
+
+  header #main_menu_body {
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    top: -40px;
+    overflow-y: scroll;
+    z-index: 100000;
+    background: transparent;
+  }
+
+  header #main_menu_body.active {
+    display: block;
+  }
+
+  ul.main_menu {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  header ul.main_menu li {
+    width: 100%;
+    line-height: 1.572;
+    border-bottom: 0px solid #e5e5e1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+  }
+
+  header ul.main_menu li a {
+    padding: 15px;
+    font-size: 14px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #fff;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+  }
+
+  header ul.main_menu li span {
+    padding: 15px;
+    font-size: 14px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #fff;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+    width: auto;
+  }
+
+  header ul.main_menu .sub_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header ul.main_menu .sub_menu ul li {
+    width: 100%;
+    border-bottom: 0px solid #ffffff;
+  }
+
+  header ul.main_menu .sub_menu ul li a {
+    padding: 9px 16px 9px 30px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    background: transparent;
+  }
+
+  .scroll_header {
+    position: fixed;
+    top: 0px; /* ヘッダーを画面外に移動 */
+    transition: top 0.3s; /* 移動する際のアニメーション効果を追加 */
+  }
+
+  /* スクロール時にヘッダーが現れるようにする */
+  .scroll_header.visible {
+    top: -200px;
+  }
+
   .header_sp {
-    margin-top: 15px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    margin-top: 20px;
+  }
+
+  header .header_logo {
+    margin: 0;
+  }
+
+  .header_logo img {
+    margin: 0;
+    padding: 0;
+    max-width: 200px;
+    border-top: 0;
   }
 
   .header_sp .header_icon {
@@ -413,7 +538,7 @@ footer ul .company_name {
   }
 
   .header_search input {
-    border: 1px solid grey;
+    border: 1px solid #e5e5e1;
     font-size: 12px;
     line-height: 36px;
     box-sizing: border-box;
@@ -421,7 +546,6 @@ footer ul .company_name {
     height: 36px;
     padding: 0 40px 0 10px;
     background-color: #fff;
-    border-radius: 8px;
     outline: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -509,7 +633,13 @@ footer ul .company_name {
   }
 
   .pickup_content .other_list li {
-    width: 90%;
+    width: 95%;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .pickup_content .collection_index  {
+    width: 95%;
   }
 
   /* footer */
@@ -520,9 +650,27 @@ footer ul .company_name {
 
   footer ul li {
     margin-right: 0;
+    padding: 0 10px;
   }
 
   footer ul li a .pickup_img {
     width: 20px;
+  }
+
+  footer ul .footer_menu {
+    padding: 0;
+  }
+
+  footer ul .footer_menu .menu_list {
+    font-size: 10px;
+    letter-spacing: -1px;
+    color: #555;
+    padding: 0;
+  }
+
+  footer ul .company_name {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
   }
 }

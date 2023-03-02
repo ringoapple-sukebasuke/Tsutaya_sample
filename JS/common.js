@@ -1,3 +1,4 @@
+
 $(function () {
   let width = $(window).width();
   if(width >= 750) {
@@ -41,5 +42,16 @@ $(function () {
       slidesToShow: 2,
       slidesToScroll: 1
     });
+  }
+});
+
+
+window.addEventListener("scroll", function() {
+  var header = document.querySelector(".scroll_header");
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > header.clientHeight) {
+    header.classList.add("visible");
+  } else {
+    header.classList.remove("visible");
   }
 });
