@@ -49,7 +49,8 @@ a:hover {
 }
 
 img {
-  width: 100%
+  width: 100%;
+  overflow-clip-margin: content-box;
 }
 
 header {
@@ -99,7 +100,7 @@ header .header_logo {
   padding: 0 14px;
   color: #000000;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   letter-spacing: initial;
   position: relative;
@@ -259,10 +260,11 @@ h2 .title {
 }
 
 .pickup_content .slider_recommend .pickup_img .date {
-  font-size: 14px;
-  color: black;
-  margin: 15px 0;
-  padding: 0 12px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 11px;
+  margin: 10px 0;
+  color: #000;
 }
 .pickup_content .slider_recommend .pickup_img .description {
   font-weight: bold;
@@ -310,6 +312,7 @@ h2 .title {
   display: block;
   justify-content: center;
   margin-bottom: 80px;
+  text-align: center;
 }
 .pickup_content .other_list li {
   width: 30%;
@@ -409,6 +412,83 @@ footer ul .company_name {
 
   .sub_title {
     margin-bottom: 25px;
+  }
+
+  header #main_menu_body {
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    top: -40px;
+    overflow-y: scroll;
+    z-index: 100000;
+    background: transparent;
+  }
+
+  header #main_menu_body.active {
+    display: block;
+  }
+
+  ul.main_menu {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  header ul.main_menu li {
+    width: 100%;
+    line-height: 1.572;
+    border-bottom: 0px solid #e5e5e1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+  }
+
+  header ul.main_menu li a {
+    padding: 15px;
+    font-size: 14px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #fff;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+  }
+
+  header ul.main_menu li span {
+    padding: 15px;
+    font-size: 14px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #fff;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+    width: auto;
+  }
+
+  header ul.main_menu .sub_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header ul.main_menu .sub_menu ul li {
+    width: 100%;
+    border-bottom: 0px solid #ffffff;
+  }
+
+  header ul.main_menu .sub_menu ul li a {
+    padding: 9px 16px 9px 30px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    background: transparent;
   }
 
   .scroll_header {

@@ -7,7 +7,8 @@
     <title>okada</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <!-- slickがうまく読み込めないので、オンラインで実装 -->
@@ -65,6 +66,63 @@
         <div class="menu_button"></div>
         <div class="shopping_button"></div>
       </div>
+      <nav id="main_menu_body" style="top: -40px;">
+        <div class="gnav_menu">
+            <div class="inner_gnav_menu">
+                <ul class="main_menu">
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="https://store-tsutaya.tsite.jp/?nheader_store-search">店舗検索</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="https://store-tsutaya.tsite.jp/item.html?nheader_item-search">商品検索</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="/information/?nheader_information">インフォメーション</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="/feature/?nheader_feature">特集</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="/article/?nheader_article">記事</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="https://ssl.help.tsite.jp/?site_domain=qa-store" target="_blank">よくある質問</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="https://store-tsutaya.tsite.jp/store_service/list/usersvoice.html?nheader_usersvoice">お客様の声</a>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <a href="https://store-tsutaya.tsite.jp/setting/?nheader_setting">各種設定</a>
+                    </li>
+                    <li class="sub_menu" style="left: 0px; opacity: 1;">
+                        <span>サービス</span>
+                        <ul>
+                            <li class="menu_shop_list" style="left: 0px; opacity: 1;">
+                                <a href="https://movie-tsutaya.tsite.jp/netdvd/dvd/top.do" target="_blank">宅配レンタル</a>
+                            </li>
+                            <li class="menu_shop_list" style="left: 0px; opacity: 1;">
+                                <a href="https://game-tsutaya.tsite.jp" target="_blank">オンラインゲーム</a>
+                            </li>
+                            <li class="menu_shop_list" style="left: 0px; opacity: 1;">
+                                <a href="https://official.giftole.jp" target="_blank">オンラインクレーンゲーム</a>
+                            </li>
+                            <li class="menu_shop_list" style="left: 0px; opacity: 1;">
+                                <a href="https://tsutaya.tsite.jp/premium/?nheader_tpremium" target="_blank">TSUTAYAプレミアム</a>
+                            </li>
+                            <li class="menu_shop_list" style="left: 0px; opacity: 1;">
+                                <a href="https://store.tsite.jp/?nheader_storetsite" target="_blank">蔦屋書店</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="left: 0px; opacity: 1;">
+                        <div class="gnav_close">
+                            <a href="javascript:void(0);" style="width: 70px; text-align: center;"><img src="https://tsutaya.tsite.jp/static_files/img/icon/menu_close.png" alt="閉じる"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
     <div class="container">
       <div class="slider">
@@ -99,9 +157,9 @@
           <li>
             <a href="#" class="pickup_img" >
               <div style="position: relative">
-                <img src="images/pickup_1.jpg" style="background-image: url('../images/pickup_1.jpg');">
-                <div class="date">2023.02.17(金)</div>
-                <div class="description">レンタル新作】清野菜名＆松坂桃李主演、完全オリジナルの10年後の物語『耳をすませば』2月22日（水）リリース</div>
+                <img src="images/pickup_1.jpg">
+                <div class="date">2023.02.10(金)</div>
+              <div class="description">【レンタル新作】清野菜名＆松坂桃李主演、完全オリジナルの10年後の物語『耳をすませば』2月22日（水）リリース</div>
               </div>
             </a>
           </li>
@@ -405,6 +463,21 @@
         <div class="company_name">©Culture Convenience Club Co.,Ltd.</div>
       </ul>
     </footer>
+
+    <script>
+      const menuButton = document.querySelector('.menu_button');
+      console.log(menuButton);
+      const menu = document.querySelector('#main_menu_body');
+      const close = document.querySelector('.gnav_close');
+      console.log(menu);
+      menuButton.addEventListener('click', function() {
+        menu.classList.toggle('active');
+      });
+      close.addEventListener('click', function() {
+        menu.classList.remove('active');
+      });
+
+    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

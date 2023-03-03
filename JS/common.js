@@ -1,3 +1,4 @@
+
 $(function () {
   let width = $(window).width();
   if(width >= 750) {
