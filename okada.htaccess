@@ -1,0 +1,8 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.okada-plants\.com
+RewriteRule ^(.*)$ https://okada-plants.com/$1 [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^.*index\.html
+RewriteRule ^(.*)index.html$ https://okada-plants.com/$1 [R=301,L]
